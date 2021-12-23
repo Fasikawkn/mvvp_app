@@ -27,7 +27,6 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     final model = Provider.of<AuthenticationModel>(context).otpCode;
-    debugPrint("===============================The code sent is $model");
     final size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
